@@ -27,6 +27,8 @@ set scrolloff=1
 set sidescrolloff=5
 
 let mapleader="\<SPACE>"
+nnoremap zz :update<cr>
+inoremap zz <Esc>:update<cr>gi
 
 "Setting Arrow Keys to Resize Panes vimrc
 nnoremap <Left> :vertical resize -1<CR>
@@ -70,6 +72,7 @@ call plug#begin('~/.local/share/nvim/plugged')
   Plug 'w0rp/ale'
   Plug 'easymotion/vim-easymotion'
   Plug 'tpope/vim-surround'
+  Plug 'christoomey/vim-tmux-navigator' 
 
 call plug#end()
 
